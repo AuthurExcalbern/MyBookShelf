@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="full_screen_with_header">false</bool>
+    <bool name="padded_layout">true</bool>
+    <dimen name="sliding_header_max_height">300dp</dimen>
+    <dimen name="sliding_photo_container_height">180dp</dimen>
+</resources>

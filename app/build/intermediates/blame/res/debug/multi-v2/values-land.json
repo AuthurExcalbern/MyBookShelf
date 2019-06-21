@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Android\\AndroidProject\\BookeShelf\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\01\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\7d9bd261109c1c3c1bae94ebc21793dd\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    },
+                    "to": {
+                        "startLines": "5,6,7",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "198,268,339",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "263,334,402"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\01\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0-rc01.aar\\2c3eb7170dfddc9d8ceb042697cf963c\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "12",
+                        "startColumns": "4",
+                        "startOffsets": "636",
+                        "endLines": "15",
+                        "endColumns": "10",
+                        "endOffsets": "803"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\01\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-sliding-activity-1.5.2.aar\\201bf2475b90630e3075ad0836018dfa\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,151,198,256,315,375",
+                        "endColumns": "52,42,46,57,58,59,51",
+                        "endOffsets": "103,146,193,251,310,370,422"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,108,151,407,465,524,584",
+                        "endColumns": "52,42,46,57,58,59,51",
+                        "endOffsets": "103,146,193,460,519,579,631"
+                    }
+                }
+            ]
+        }
+    ]
+}

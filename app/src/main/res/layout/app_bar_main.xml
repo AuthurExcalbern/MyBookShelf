@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" >-->
+            <ImageView
+                android:id="@+id/open_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bookshelf_edit"
+                />
+
+            <Spinner
+                android:id="@+id/shelfSpinner"
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+            </Spinner>
+
+            <SearchView
+                android:id="@+id/search_bar"
+                android:layout_marginRight="20dp"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"></SearchView>
+</androidx.appcompat.widget.Toolbar>
+        <!--</android.support.v7.widget.Toolbar>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:layout_margin="@dimen/fab_margin"
+    app:srcCompat="@android:drawable/ic_input_add" />
+
+
+    <TextView
+        android:id="@+id/addHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="130dp"
+        android:layout_toRightOf="@id/add"
+        android:text="添加书籍"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/multiaddHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="200dp"
+        android:layout_toRightOf="@id/multiadd"
+        android:text="批量添加"
+        android:visibility="gone" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="110dp"
+        android:visibility="gone"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/add"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="110dp"-->
+        <!--android:visibility="gone"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/multiadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="180dp"
+        android:visibility="gone"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/multiadd"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="180dp"-->
+        <!--android:visibility="gone"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

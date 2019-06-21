@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="full_screen_with_header">true</bool>
+    <bool name="padded_layout">true</bool>
+    <bool name="sliding_two_panel">true</bool>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="sliding_maximum_title_size">20sp</dimen>
+    <integer name="sliding_card_layout_weight">6</integer>
+    <integer name="sliding_space_layout_weight">1</integer>
+    <integer name="sliding_title_lines">5</integer>
+    <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
+    <item name="tabGravity">center</item>
+    <item name="tabMode">fixed</item>
+  </style>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/menu_publisher"
+        android:orderInCategory="100"
+        android:title="@string/menu_publisher"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/menu_title"
+        android:orderInCategory="100"
+        android:title="@string/menu_title"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/menu_publish_time"
+        android:orderInCategory="100"
+        android:title="@string/menu_publish_time"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/menu_author"
+        android:orderInCategory="100"
+        android:title="@string/menu_author"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/menu_renameTag"
+        android:orderInCategory="100"
+        android:title="重命名标签"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/menu_deleteTag"
+        android:orderInCategory="100"
+        android:title="删除标签"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/menu_renameShelf"
+        android:orderInCategory="100"
+        android:title="重命名书架"
+        app:showAsAction="never" >
+    </item>
+    <item
+        android:id="@+id/menu_deleteShelf"
+        android:orderInCategory="100"
+        android:title="删除书架"
+        app:showAsAction="never" >
+    </item>
+
+
+</menu>

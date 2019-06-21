@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="24dp"
+        android:elevation="2dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_detail_info_title_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="16dp"
+                android:lines="1"
+                android:textSize="16sp"
+                android:text="@string/book_info_title" />
+            <!--文本内容:Info (Source: %1$s)-->
+
+            <View
+                android:background="#ffe0e0e0"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/book_detail_info_author_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_author_primary"
+                    android:contentDescription="@string/book_info_author_image_view" />
+                <!--文本内容：Author-->
+
+                <TextView
+                    android:id="@+id/book_detail_info_author_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="author"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText" />
+                <!--颜色配置：#212121-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_info_translator_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_translator_primary"
+                    android:contentDescription="@string/book_info_translator_image_view" />
+                <!--文本内容：translator-->
+
+                <TextView
+                    android:id="@+id/book_detail_info_translator_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="translator"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_info_publisher_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_publisher_primary"
+                    android:contentDescription="@string/book_info_publisher_image_view" />
+                <!--文本内容：Publisher-->
+
+                <TextView
+                    android:id="@+id/book_detail_info_publisher_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="publisher"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_info_pubtime_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_pubtime_primary"
+                    android:contentDescription="@string/book_info_pubtime_image_view" />
+                <!--文本内容：PubData-->
+
+                <TextView
+                    android:id="@+id/book_detail_info_pubtime_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="pubData"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_info_isbn_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_isbn_primary"
+                    android:contentDescription="@string/book_info_isbn_image_view" />
+                <!--文本内容：ISBN-->
+
+                <TextView
+                    android:id="@+id/book_detail_info_isbn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="ISBN"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="16dp"
+                android:lines="1"
+                android:textSize="16sp"
+                android:text="@string/book_detail_title" />
+            <!--文本内容：Details-->
+
+            <View
+                android:background="#ffe0e0e0"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/book_detail_reading_status_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_reading_status_primary"
+                    android:contentDescription="@string/reading_status_image_view" />
+                <!--文本内容：Reading Status-->
+
+                <TextView
+                    android:id="@+id/book_detail_reading_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="reading status"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_bookshelf_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_bookshelf_primary"
+                    android:contentDescription="@string/book_shelf_image_view" />
+                <!--文本内容:Bookshelf-->
+
+                <TextView
+                    android:id="@+id/book_detail_bookshelf_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="bookshelf"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_notes_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_notes_primary"
+                    android:contentDescription="@string/note_edit_text_hint" />
+                <!--文本内容：Notes-->
+
+                <TextView
+                    android:id="@+id/book_detail_notes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="notes"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_labels_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_label_primary"
+                    android:contentDescription="@string/book_detail_labels_image_view" />
+                <!--文本内容:Labels-->
+
+                <TextView
+                    android:id="@+id/book_detail_labels_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="labels"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/book_detail_website_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="0dp"
+                    android:src="@drawable/ic_website_primary"
+                    android:contentDescription="@string/website_edit_text_hint" />
+                <!--文本内容：Website-->
+
+                <TextView
+                    android:id="@+id/book_detail_website_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_centerVertical="true"
+                    android:text="website"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

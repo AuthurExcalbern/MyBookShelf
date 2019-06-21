@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/colorPrimary"
+        android:text="delete" />
+
+
+    <ImageView
+        android:id="@+id/book_detail_header_image"
+        android:layout_width="95dp"
+        android:layout_height="117dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:padding="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="@string/book_detail_header_text"
+        android:maxLines="1" />
+    <!--文本内容：Easter Egg: You add this book at-->
+
+    <TextView
+        android:id="@+id/book_detail_header_addtime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Android\\AndroidProject\\BookeShelf\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-land-v13\\values-sw600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\01\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-sliding-activity-1.5.2.aar\\201bf2475b90630e3075ad0836018dfa\\res\\values-sw600dp-land-v13\\values-sw600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,109,152,210",
+                        "endColumns": "53,42,57,62",
+                        "endOffsets": "104,147,205,268"
+                    }
+                }
+            ]
+        }
+    ]
+}

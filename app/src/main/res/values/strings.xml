@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">BookeShelf</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">BookShelf</string>
+    <string name="nav_header_subtitle">管理您的书籍</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_title">标题</string>
+    <string name="menu_author">作者</string>
+    <string name="menu_publisher">出版社</string>
+    <string name="menu_publish_time">出版时间</string>
+
+    <!--DetailActivity-->
+    <string name="book_info_title">Info (Source: %1$s)</string>
+    <string name="book_info_title_image_view">Title</string>
+    <string name="book_info_title_toast">Title copied to clipboard!</string>
+    <string name="book_info_title_clipboard_content">Title: %1$s</string>
+    <string name="book_info_author_image_view">Authors</string>
+    <string name="book_info_author_toast">Authors copied to clipboard!</string>
+    <string name="book_info_author_clipboard_content">Authors: %1$s</string>
+    <string name="book_info_translator_image_view">Translators</string>
+    <string name="book_info_translator_toast">Translators copied to clipboard!</string>
+    <string name="book_info_translator_clipboard_content">Translators: %1$s</string>
+    <string name="book_info_publisher_image_view">Publisher</string>
+    <string name="book_info_publisher_toast">Publisher copied to clipboard!</string>
+    <string name="book_info_publisher_clipboard_content">Publisher: %1$s</string>
+    <string name="book_info_pubtime_image_view">PubDate</string>
+    <string name="book_info_pubtime_toast">PubDate copied to clipboard!</string>
+    <string name="book_info_pubtime_clipboard_content">PubDate: %1$s</string>
+    <string name="book_info_isbn_image_view">ISBN</string>
+    <string name="book_info_isbn_toast">ISBN copied to clipboard!</string>
+    <string name="book_info_isbn_clipboard_content">ISBN: %1$s</string>
+    <string name="book_detail_title">详情</string>
+    <string name="book_detail_header_text">彩蛋: </string>
+    <string name="book_detail_menu_delete">Delete Book</string>
+    <string name="book_detail_book_delete_toast">Book Deleted!</string>
+    <string name="book_detail_labels_image_view">Labels</string>
+    <string name="book_detail_browser_not_found">No supported browser found!</string>
+    <string name="reading_status_image_view">Reading Status</string>
+    <string name="book_shelf_image_view">Bookshelf</string>
+    <string name="note_edit_text_hint">Notes</string>
+    <string name="website_edit_text_hint">Website</string>
+
+    <!--AddActivity-->
+    <string name="scan_toolbar_title">条形码扫描</string>
+    <string name="menu_single_add_flash_off">Flash[OFF]</string>
+    <string name="menu_single_add_flash_on">Flash[ON]</string>
+    <string name="menu_single_add_manually">Input ISBN Manually</string>
+    <string name="menu_single_add_totally_manually">手动添加书籍</string>
+    <string name="camera_permission_denied">Please grant Camera permission to scan Barcode!</string>
+    <string name="isbn_unmatched_dialog_title">Get Information Failed</string>
+    <string name="isbn_unmatched_dialog_content">Your Book\'s ISBN is %1$s,
+        we failed to get details from web services. Please check ISBN.\n
+        Do you want to add it any way or rescan the Barcode?</string>
+    <string name="isbn_unmatched_dialog_positive">Add it Anyway</string>
+    <string name="isbn_unmatched_dialog_negative">Rescan</string>
+    <string name="request_failed_dialog_content">Your Book\'s ISBN is %1$s,
+        we failed to connect to web services. Please check network.\n
+        Do you want to add it any way or rescan the Barcode?</string>
+    <string name="book_duplicate_dialog_title">Book Exists</string>
+    <string name="book_duplicate_dialog_content">This book is still on your bookshelf. Do you want to add it anyway?</string>
+    <string name="book_duplicate_dialog_positive">Add it Anyway</string>
+    <string name="input_isbn_manually_title">Add Manually</string>
+    <string name="input_isbn_manually_content">Please input your book\'s isbn in the EditText (10 or 13 digits).</string>
+    <string name="input_isbn_manually_edit_text">Book\'s ISBN</string>
+    <string name="input_isbn_manually_positive">Add</string>
+    <item type="id" name="menu_simple_add_flash" />
+    <item type="id" name="menu_simple_add_manually" />
+    <item type="id" name="menu_batch_add_flash" />
+    <item type="id" name="menu_simple_add_totally_manual"/>
+</resources>
